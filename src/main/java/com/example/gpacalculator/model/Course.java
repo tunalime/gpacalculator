@@ -10,6 +10,8 @@ public class Course {
 
     private boolean isRepeat;
 
+    private double preGrade;
+
     public String getCourseName() {
         return courseName;
     }
@@ -40,5 +42,13 @@ public class Course {
 
     public void setRepeat(boolean repeat) {
         isRepeat = repeat;
+    }
+
+    public double getPreGrade() {
+        return preGrade;
+    }
+
+    public void setPreGrade(double preGrade) {
+        this.preGrade = preGrade;
     }
 }
