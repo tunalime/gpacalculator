@@ -1,8 +1,7 @@
 package com.example.gpacalculator.controller;
 
-import com.example.gpacalculator.dto.UserDto;
 import com.example.gpacalculator.model.User;
-import com.example.gpacalculator.service.UserService;
+import com.example.gpacalculator.service.impl.UserService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -45,7 +44,6 @@ public class UserController {
 
     @GetMapping("/{id}")
     public ResponseEntity<User> getUserById(@PathVariable Long id){
-        //return new ResponseEntity(userService.getUserById(id), HttpStatus.OK);
         return ResponseEntity.ok(userService.getUserById(id));
     }
 }
