@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator Form</title>
+</head>
+<body>
+<h1>Not Ortalaması Hesaplama Formu</h1>
+<form method="post" action="/calculate">
+    <label for="totalCredits">Toplam Kredi:</label>
+    <input type="number" id="totalCredits" name="totalCredits" value="{{user.totalCredits}}">
+    <br>
+    <label for="gpa">Genel Ortalama:</label>
+    <input type="number" id="gpa" name="gpa" value="{{user.gpa}}">
+    <br>
+    <hr>
+    <h3>Yeni Ders Ekle</h3>
+    <label for="courseName">Ders Adı:</label>
+    <input type="text" id="courseName" name="courseName">
+    <br>
+    <label for="credit">Kredi:</label>
+    <input type="number" id="credit" name="credit">
+    <br>
+    <label for="grade">Not:</label>
+    <input type="number" id="grade" name="grade">
+    <br>
+    <label for="isRepeat">Tekrar Dersi?:</label>
+    <input type="checkbox" id="isRepeat" name="isRepeat">
+    <br>
+    <label for="preGrade">Tekrar Ders Notu:</label>
+    <input type="number" id="preGrade" name="preGrade">
+    <br>
+    <button type="submit">Hesapla</button>
+</form>
+</body>
+</html>

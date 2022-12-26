@@ -1,7 +1,5 @@
 package com.example.gpacalculator.model;
 
-import javax.persistence.*;
-
 public class User {
 
     private double totalCredits;
