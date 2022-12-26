@@ -10,7 +10,7 @@ public class Course {
 
     private boolean isRepeat;
 
-    private double preGrade;
+    private double preGrade = 0;
 
     public String getCourseName() {
         return courseName;
