@@ -23,7 +23,7 @@ public class CalculateController {
     public String showCalculatorForm(Model model) {
         model.addAttribute("user", new User());
         model.addAttribute("course", new Course());
-        return "calculatorForm";
+        return "calculatorForm1";
     }
 
     @PostMapping("/calculate")
